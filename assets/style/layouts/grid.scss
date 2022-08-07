@@ -1,0 +1,19 @@
+.container {
+    width: 100%;
+    padding-right: $grid_gutter;
+    padding-left: $grid_gutter;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $breakpoint_xl_value;
+    
+    @include breakpointWidth($breakpoint_xl, $breakpoint_xl_value);
+
+}
+
+.row {
+
+}
+
+.col {
+
+}

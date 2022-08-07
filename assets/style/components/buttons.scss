@@ -1,0 +1,11 @@
+.btn {
+    color: $white;
+    background-color: $secondary;
+    &--accent {
+        background-color: $accent;
+    }
+
+    &--fluid {
+        width: 100%
+    }
+}

@@ -1,0 +1,12 @@
+// Breakpoints
+@mixin breakpointWidth($breakpoint, $value) {
+  @media (max-width: $breakpoint) {
+    max-width: $value;
+  }
+}
+
+@mixin test($breakpoint) {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}

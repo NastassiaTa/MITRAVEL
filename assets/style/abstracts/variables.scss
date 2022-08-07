@@ -1,0 +1,28 @@
+// Color project
+$white:        #ffffff;
+$blue:         #2136a1;
+$ocean:        #1C2E3D;
+$red:          #E8594E;
+$green:        #73AFBA;
+$gray:         #788692;
+
+$primary:       $ocean;
+$secondary:     $green;
+$accent:        $red;
+$success:       $green;
+$danger:        $red;
+$text:          $gray;
+
+// Animation
+$transition: 0.3s;
+
+// Padding & Margin
+$grid_gutter: 15px;
+
+// Style border radius
+$border-radius: 8px;
+
+
+// Breakpoints
+$breakpoint_xl: 1566px;
+$breakpoint_xl_value: 1440px;

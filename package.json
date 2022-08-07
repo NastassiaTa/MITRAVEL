@@ -1,0 +1,28 @@
+{
+  "name": "mitravel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "source": "index.pug",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NastassiaTa/MITRAVEL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NastassiaTa/MITRAVEL/issues"
+  },
+  "homepage": "https://github.com/NastassiaTa/MITRAVEL#readme",
+  "dependencies": {
+    "@parcel/transformer-pug": "^2.7.0",
+    "@parcel/transformer-sass": "^2.7.0",
+    "normalize.css": "^8.0.1",
+    "parcel": "^2.7.0"
+  }
+}
