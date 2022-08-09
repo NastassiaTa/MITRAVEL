@@ -1,11 +1,53 @@
 .btn {
+    width: 266px;
+    height: 80px;
+    border: 0px;
+    font-size: 12px;
+    border-radius: $border-radius;
     color: $white;
     background-color: $secondary;
-    &--accent {
-        background-color: $accent;
-    }
 
     &--fluid {
-        width: 100%
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    &--accent {
+        background-color: $accent;
+
+    }
+
+    &--changed {
+        border-radius: 24px;
+        width: 132px;
+        height: 48px;
+    }
+
+    &--blend-mode {
+        background: #090E0C;
+        mix-blend-mode: normal;
+        opacity: 0.47;
+        border-radius: 28px;
+    }
+}
+
+
+.span__accent {
+    border-radius: 24px;
+    width: 132px;
+    height: 48px;
+    border: 0px;
+    font-size: 12px;
+    color: $white;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--blend-mode {
+        background: #090E0C;
+        mix-blend-mode: normal;
+        opacity: 0.47;
+        border-radius: 28px;
     }
 }
