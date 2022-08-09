@@ -7,29 +7,29 @@ html(lang="en")
         link(rel="stylesheet", href="./assets/style/style.scss")
         title Mitravel
     body
-        .container some text ...
+        .container
             button.btn.btn--accent BUY THE BOOK            
             button.btn READ ARTICLE            
             button.btn.btn--fluid Subscribe Now
-            span.span__accent.span__accent--blend-mode FEATURED
-            span.span__accent FEATURED
-        .sectoin 
-            h2.title-slider Become A Travel Pro In <br>One Easy Lesson
-            .container-slider
-                img.slider(src="./assets/images/1.png", alt="")
-                .slider__active  
-                    img.slider(src="./assets/images/2.png", alt="")
-                    .slider__active--description Vacation Home <br>Rental Success
-                img.slider(src="./assets/images/3.png", alt="")  
-                img.slider(src="./assets/images/4.png", alt="")
-        .sectoin 
-            .subscription
-                .subscription-block
-                    img(src="./assets/images/unsplash.png", alt="")    
-                    h2.subscription-block--title Sign Up Our <br>Newsletter
-                    p.subscription-block--description The state of Utah in the United States is home to <br>lots of beautiful National Parks, & Bryce Canyon <br>National Park ranks as three of the most <br>magnificent.
-                .subscription-form
-                    input(type="email" name="EMAIL" placeholder="EMAIL")
-                    input(type="email" name="EMAIL" placeholder="EMAIL")
-                    input(type="numder" name="numder" placeholder="PHONE NUMBER")
-                    button.btn.btn--fluid SIGN UP NOW
+            span.budge.budge--blend-mode FEATURED
+            span.budge FEATURED
+        section.travel-bloks
+            .container 
+                h2.title.title--h2.travel-bloks__title Become A Travel Pro In <br>One Easy Lesson
+                .row
+                     - let travels = [{ title: 'Vacation Home\nRental Success', img: './assets/images/1.png' }, { title: 'Vacation Home\nRental Success', img: './assets/images/2.png' }, { title: 'Vacation Home\nRental Success', img: './assets/images/3.png' }, { title: 'Vacation Home\nRental Success', img: './assets/images/4.png' }];
+                     each item in travels
+                        a.travel-item(href="#")
+                            img(src=`${item.img}`, alt="", height="551")
+                            .travel-item__description Vacation Home <br>Rental Success
+            .container 
+                .subscription
+                    .subscription-block
+                        img(src="./assets/images/unsplash.png", alt="")    
+                        h2.subscription-block--title Sign Up Our <br>Newsletter
+                        p.subscription-block--description The state of Utah in the United States is home to <br>lots of beautiful National Parks, & Bryce Canyon <br>National Park ranks as three of the most <br>magnificent.
+                    .subscription-form
+                        input(type="email" name="EMAIL" placeholder="EMAIL")
+                        input(type="email" name="EMAIL" placeholder="EMAIL")
+                        input(type="numder" name="numder" placeholder="PHONE NUMBER")
+                        button.btn.btn--fluid SIGN UP NOW
