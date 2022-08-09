@@ -1,11 +1,18 @@
 .btn {
+    width: 266px;
+    height: 80px;
+    border: 0px;
+    font-size: 12px;
+    border-radius: $border-radius;
     color: $white;
     background-color: $secondary;
-    &--accent {
-        background-color: $accent;
-    }
+    text-transform: uppercase;
 
     &--fluid {
-        width: 100%
+        width: 100%;
+    }
+
+    &--accent {
+        background-color: $accent;
     }
 }

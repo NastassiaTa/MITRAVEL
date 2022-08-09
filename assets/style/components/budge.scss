@@ -1,0 +1,19 @@
+.budge {
+    border-radius: 24px;
+    width: 132px;
+    height: 48px;
+    border: 0px;
+    font-size: 12px;
+    color: $white;
+    background-color: $accent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    &--blend-mode {
+        background: #090E0C;
+        mix-blend-mode: normal;
+        opacity: 0.47;
+        border-radius: 28px;
+    }
+}
