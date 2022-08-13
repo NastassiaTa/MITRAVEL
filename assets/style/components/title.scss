@@ -1,7 +1,9 @@
+@import '../abstracts/index.scss';
+
 .title {
     &--h2 {
         font-size: 64px;
         line-height: 80px;
         color: $primary;
     }
- }
+}
