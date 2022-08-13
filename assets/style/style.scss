@@ -17,6 +17,7 @@
 .subscription {
    &-block {
       position: relative;
+
       &::after {
          content: '';
          display: block;
@@ -47,12 +48,65 @@
          z-index: 1;
          margin: 0;
          left: 135px;
-         bottom: 178px; 
+         bottom: 178px;
          font-family: 'SFCompactText';
       }
    }
 
 }
+
+.featured {
+   position: relative;
+   height: 500px;
+
+   .featured--img {
+      position: absolute;
+      border-radius: $border-radius;
+      width: 100%;
+
+   }
+
+   .featured-block {
+      position: absolute;
+      left: 40px;
+      bottom: 40px;
+
+      .featured-block--description {
+         font-size: 10px;
+         color: $white;
+
+      }
+
+      .featured-block--title {
+         font-size: 32px;
+         color: $white;
+         padding-top: 8px;
+         padding-bottom: 30px;
+      }
+
+      .featured-block--reviews {
+         padding-left: -8px;
+
+         .reviews-img {
+            border: 4px, solid $white;
+
+         }
+      }
+
+   }
+
+
+
+
+
+
+   .featured--budge {
+      position: absolute;
+      top: 40px;
+      right: 40px;
+   }
+}
+
 
 
 
