@@ -1,3 +1,5 @@
+@use "sass:map";
+
 // Color project
 $white:        #ffffff;
 $blue:         #2136a1;
@@ -26,6 +28,12 @@ $grid_gutter: 15px;
 $border-radius: 8px;
 
 
+// Breakpoint prefixs
+$prefix-md: 'md';
+$prefix-lg: 'lg';
+
 // Breakpoints
-$breakpoint_xl: 1920px;
-$breakpoint_xl_value: 1566px;
+$breakpoints-value: ($prefix-lg: 1920px, $prefix-md: 1566px);
+
+// Container width
+$containers-value: ($prefix-lg: 1566px, $prefix-md: 1360px);
