@@ -1,0 +1,108 @@
+
+.featured {
+    $parent: &;
+    position: relative;
+    height: 500px;
+    border-radius: $border-radius;
+    overflow: hidden;
+    background: $primary;
+
+    &::after {
+        content: '';
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 50%, rgba(0, 0, 0, 0.461617) 100%);
+    }
+ 
+    &__img {
+       position: absolute;
+       z-index: 0;
+       width: 100%;
+       height: 100%;
+       top: 0;
+       bottom: 0;
+       left: 0;
+       right: 0;
+       object-fit: cover;
+    //    transition: $transition;
+    }
+ 
+    &__info {
+       position: absolute;
+       left: 0;
+       bottom: 0;
+       padding: 40px;
+       z-index: 2;
+       width: 100%;
+    }
+
+    &__pretitle {
+        font-size: 10px;
+        color: $white;
+        letter-spacing: $letterSpacinText;
+        // transition: $transition;
+     }
+
+     &__title {
+        font-size: 32px;
+        color: $white;
+        padding-top: 8px;
+        padding-bottom: 30px;
+        // transition: $transition;
+     } 
+ 
+    &__budge {
+       position: absolute;
+       top: 40px;
+       right: 40px;
+       z-index: 2;
+    //    transition: $transition;
+    }
+
+    &__reviews {
+        display: inline-block;
+        position: relative;
+        // transition: $transition;
+     } 
+
+    &:hover {
+        #{$parent}__img {
+            opacity: 0.1;
+        }
+
+        #{$parent}__pretitle {
+            text-align: center;
+         }
+    
+         #{$parent}__title {
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 166px;
+            font-family: 'SFCompactText';
+            font-weight: 400;
+         } 
+
+        #{$parent}__budge {
+            opacity: 0;
+        }
+
+        #{$parent}__reviews {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+ }
+
+ .reviews {
+    &__img {
+        border: 4px solid $white;
+        border-radius: 50%;
+        &:not(:first-child) {
+            margin-left: -16px;
+        }
+    }
+ }
