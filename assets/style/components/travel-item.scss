@@ -1,10 +1,24 @@
+@import '../abstracts/index.scss';
+
 .travel-item {
     $parent: &;
+    display: block;
     position: relative;
-    width: 367px;
+    height: 550px;
+    width: 100%;
     border-radius: $border-radius;
     overflow: hidden;
     transition: $transition;
+    &__img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      object-fit: cover;
+    }
     &__description {
        position: absolute;
        left: 53px;
