@@ -12,6 +12,7 @@
 .subscription {
    &-block {
       position: relative;
+
       &::after {
          content: '';
          display: block;
@@ -42,13 +43,12 @@
          z-index: 1;
          margin: 0;
          left: 135px;
-         bottom: 178px; 
+         bottom: 178px;
          font-family: 'SFCompactText';
       }
    }
 
 }
-
 
 
 @font-face {
