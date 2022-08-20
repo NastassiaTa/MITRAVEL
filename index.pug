@@ -29,16 +29,35 @@ html(lang="en")
                                 img.travel-item__img(src=`${item.img}`, alt="", height="551")
                                 .travel-item__description Vacation Home <br>Rental Success
         .container 
+            //- .subscription  
+            //-     .subscription-img
+            //-         img(src="./assets/images/unsplash.png", alt="") 
+            //-     .row.subscription-row 
+            //-         .col-md-7.subscription-col            
+            //-             .subscription-block                             
+            //-                 h2.subscription-block__title Sign Up Our <br>Newsletter
+            //-                 p.subscription-block__description The state of Utah in the United States is home to <br>lots of beautiful National Parks, & Bryce Canyon <br>National Park ranks as three of the most <br>magnificent.
+            //-         .col-md-5
+            //-             .subscription-form
+            //-                 input.subscription-form__input(type="email" name="EMAIL" placeholder="EMAIL")
+            //-                 input.subscription-form__input(type="email" name="EMAIL" placeholder="EMAIL")
+            //-                 input.subscription-form__input(type="numder" name="numder" placeholder="PHONE NUMBER")
+            //-             button.btn.subscription-form__btn SIGN UP NOW
             .subscription
-                .subscription-block
-                    img(src="./assets/images/unsplash.png", alt="")    
-                    h2.subscription-block--title Sign Up Our <br>Newsletter
-                    p.subscription-block--description The state of Utah in the United States is home to <br>lots of beautiful National Parks, & Bryce Canyon <br>National Park ranks as three of the most <br>magnificent.
+                .subscription-img
+                    img(src="./assets/images/unsplash.png", alt="")
+                .subscription-block                             
+                    h2.subscription-block__title Sign Up Our <br>Newsletter
+                    p.subscription-block__description The state of Utah in the United States is home to <br>lots of beautiful National Parks, & Bryce Canyon <br>National Park ranks as three of the most <br>magnificent.
                 .subscription-form
-                    input(type="email" name="EMAIL" placeholder="EMAIL")
-                    input(type="email" name="EMAIL" placeholder="EMAIL")
-                    input(type="numder" name="numder" placeholder="PHONE NUMBER")
-                    button.btn.btn--fluid SIGN UP NOW
+                    .email-form
+                        input.email-form__input(type="email" name="EMAIL" placeholder="EMAIL")
+                        input.email-form__input(type="email" name="EMAIL" placeholder="EMAIL")
+                        input.email-form__input(type="numder" name="numder" placeholder="PHONE NUMBER")
+                    button.btn.subscription-form__btn SIGN UP NOW
+
+
+
         .container 
             .row 
                 .col-md-8
@@ -55,14 +74,63 @@ html(lang="en")
                             span FEATURED
                 .col-md-4
                     .featured
-                        img.featured__img(src="./assets/images/sebastian.png", alt="", height="500") 
+                        img.featured__img(src="./assets/images/tomas-nozina.png", alt="", height="500") 
+                        .featured__info
+                            .featured__pretitle DESTINATIONS
+                            .featured__title Traveling To Barcelona
+                            .featured__reviews.reviews 
+                                img.reviews__img(src="./assets/images/img5.png", alt="")
+                                img.reviews__img(src="./assets/images/img6.png", alt="")                                
+                        .featured__play.budge-play
+                            img.budge-play--arrow(src="./assets/images/Path.svg", alt="") 
+                            img.budge-play--oval(src="./assets/images/Oval.svg", alt="")  
+                .col-md-4
+                    .featured.featured--height
+                        img.featured__img(src="./assets/images/ryan-christodoulou.png", alt="", height="710") 
+                        .featured__info
+                            .featured__pretitle DESTINATIONS
+                            .featured__title Party Jokes Startling But Unnecessary
+                            .featured__reviews.reviews 
+                                img.reviews__img(src="./assets/images/img7.png", alt="")
+                                img.reviews__img(src="./assets/images/img8.png", alt="")                               
+                .col-md-4
+                    .featured.featured--height
+                        img.featured__img(src="./assets/images/denys-nevozhai.png", alt="", height="710") 
+                        .featured__info                            
+                            .featured__title Maui By Air The Best Way Around The Island
+                            .featured__reviews.reviews 
+                                img.reviews__img(src="./assets/images/img7.png", alt="")
+                                img.reviews__img(src="./assets/images/img8.png", alt="") 
+                .col-md-4
+                    .featured.featured--height
+                        img.featured__img(src="./assets/images/simon-migaj.png", alt="", height="710") 
+                        .featured__info
+                            .featured__pretitle Andre Gide
+                            .featured__title Man cannot discover new oceans unless he has the courage to lose sight of the shore.
+                            .featured__reviews.reviews 
+                                img.reviews__img(src="./assets/images/img5.png", alt="")
+                                img.reviews__img(src="./assets/images/img6.png", alt="")
+                .col-md-4
+                    .featured
+                        img.featured__img(src="./assets/images/andre-a-xavier.png", alt="", height="710") 
+                        .featured__info
+                            .featured__pretitle DESTINATIONS
+                            .featured__title Traveling To Barcelona
+                            .featured__reviews.reviews 
+                                img.reviews__img(src="./assets/images/img11.png", alt="")
+                                img.reviews__img(src="./assets/images/img12.png", alt="")                                
+                        .featured__play.budge-play
+                            img.budge-play--arrow(src="./assets/images/Path.svg", alt="") 
+                            img.budge-play--oval(src="./assets/images/Oval.svg", alt="") 
+                .col-md-8
+                    .featured
+                        img.featured__img(src="./assets/images/cristian-palmer.png", alt="", height="500") 
                         .featured__info
                             .featured__pretitle DESTINATIONS
                             .featured__title A Guide To Rocky Mountain Vacations
                             .featured__reviews.reviews 
-                                img.reviews__img(src="./assets/images/Ellipse-1.png", alt="")
-                                img.reviews__img(src="./assets/images/Ellipse-2.png", alt="")
-                                img.reviews__img(src="./assets/images/Ellipse-3.png", alt="")
+                                img.reviews__img(src="./assets/images/img12.png", alt="")
+                                img.reviews__img(src="./assets/images/img13.png", alt="")
+                                img.reviews__img(src="./assets/images/img14.png", alt="")
                         span.featured__budge.budge.budge--blend-mode
-                            span FEATURED
-
+                            span FEATURED                           
