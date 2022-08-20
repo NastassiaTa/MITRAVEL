@@ -2,96 +2,58 @@
 
 .subscription {
    position: relative;
+   height: 798px;
    margin-bottom: 236px;
+   border-radius: $border-radius;
 
-   &-img {
-      position: relative;
+   .row {
+      height: 100%;
+   }
+
+   &__img {
+      position: absolute;
       width: 100%;
-
-      &::after {
-         content: '';
-         display: block;
-         position: absolute;
-         top: 0;
-         left: 0;
-         width: 100%;
-         height: 100%;
-         background: rgba(28, 46, 61, 0.46);
+      height: 100%;
+      border-radius: inherit;
+      overflow: hidden;
+      z-index: -1;
+      background: rgba(28, 46, 61, 1);
+      img {
+         @extend %imgBackground;
+         opacity: 0.54;
       }
    }
 
-   // .subscription-row {
-
-   //    position: absolute;
-   //    top: 0;
-   //    left: 0;
-   //    width: 100%;
-   //    height: 100%;
-   // }
-
-
-
-   &-block {
-      position: absolute;
-      left: 135px;
-      bottom: 178px;
-
-      &__title {
-
-         font-size: 64px;
-         line-height: 80px;
-         color: $white;
-         z-index: 1;
-         margin: 0;
-      }
-
-      &__description {
-
-         font-size: 16px;
-         line-height: 21px;
-         padding-top: 40px;
-         color: $white;
-         z-index: 1;
-         margin: 0;
-         font-family: 'SFCompactText';
-      }
+   &__title {
+      font-size: 64px;
+      line-height: 80px;
+      color: $white;
+      z-index: 1;
+      margin: 0;
    }
 
-   &-form {
-      position: absolute;
-      right: 133px;
-      top: 478px;
-
-
-
-      &__btn {
-         width: 501px;
-         border-radius: 0px 0px 8px 8px;
-      }
-
+   &__description {
+      font-size: 16px;
+      line-height: 21px;
+      padding-top: 40px;
+      color: $white;
+      z-index: 1;
+      margin: 0;
+      font-family: 'SFCompactText';
    }
 
+   &__info {
+      max-width: 368px;
+      margin-bottom: 178px;
+      margin-left: 135px;
+   }
 
-}
+   &__col {
+      display: flex;
+      align-items: flex-end;
+   }
 
-.email-form {
-   width: 501px;
-   height: 320px;
-   background: $white;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   align-items: center;
-   border-radius: 8px 8px 0px 0px;
-
-   &__input {
-      width: 357px;
-      height: 38px;
-      border: 0;
-      border-bottom: 1px solid #1C2E3D;
-      letter-spacing: 2px;
-      padding: 0 0 25px 1px;
-      font-size: 11px;
-      margin: 16px;
+   &__form {
+      margin-bottom: -80px;
    }
 }
