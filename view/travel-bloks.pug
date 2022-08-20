@@ -1,0 +1,16 @@
+section.travel-bloks
+    .container 
+        h2.title.title--h2.travel-bloks__title Become A Travel Pro In <br>One Easy Lesson
+        .row
+            -
+                let travels = [
+                    { title: 'Vacation Home\nRental Success', img: './assets/images/1.png' },
+                    { title: 'Vacation Home\nRental Success', img: './assets/images/2.png' },
+                    { title: 'Vacation Home\nRental Success', img: './assets/images/3.png' },
+                    { title: 'Vacation Home\nRental Success', img: './assets/images/4.png' },
+                ];
+            each item in travels
+                .col-md-3
+                    a.travel-item(href="#")
+                        img.travel-item__img(src=`${item.img}`, alt="", height="551")
+                        .travel-item__description Vacation Home <br>Rental Success

@@ -1,0 +1,23 @@
+section
+    .container 
+        .subscription
+            .subscription__img
+                img(src="./assets/images/unsplash.png", alt="")
+            .row
+                .col-md-7.subscription__col
+                    .subscription__info                             
+                        h2.subscription__title Sign Up Our Newsletter
+                        p.subscription__description The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent.
+                .col-md-5.subscription__col
+                    form.email-form.subscription__form
+                        .email-form__body
+                            .email-form__field
+                                label(for="input-email") EMAIL
+                                input(type="email" name="email" id="input-email")
+                            .email-form__field
+                                label(for="input-name") NAME
+                                input(type="text" name="username" id="input-name")
+                            .email-form__field
+                                label(for="input-phone") PHONE NUMBER
+                                input.email-form__input(type="text" name="numder" id="input-phone")
+                        button.btn.btn--fluid.email-form__btn SIGN UP NOW
