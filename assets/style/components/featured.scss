@@ -35,6 +35,9 @@
     }
 
     &__pretitle {
+        font-family: 'SFProDisplay';
+        font-weight: 700;
+        letter-spacing: 1.1px;
         font-size: 10px;
         color: $white;
         letter-spacing: $letterSpacinText;
@@ -42,6 +45,8 @@
     }
 
     &__title {
+        font-family: 'SFProDisplay';
+        font-weight: 700;
         font-size: 32px;
         color: $white;
         padding-top: 8px;
@@ -99,8 +104,8 @@
         left: 40px;
     }
 
-&--big{
-    height: 700px;
-}
+    &--big {
+        height: 700px;
+    }
 
 }

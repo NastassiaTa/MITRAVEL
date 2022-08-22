@@ -1,6 +1,9 @@
 @import '../abstracts/index.scss';
 
 .email-form {
+   font-family: 'SFProDisplay';
+    font-weight: 700;
+    letter-spacing: 2px;  
     width: 501px;
     background: $white;
     border-radius: 8px;
