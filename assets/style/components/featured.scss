@@ -105,7 +105,9 @@
     }
 
     &--big {
-        height: 700px;
+        @include media-breakpoint-up(xxl) {
+            height: 700px;
+        }
     }
 
 }

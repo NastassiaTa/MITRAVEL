@@ -1,24 +1,24 @@
-@use "sass:map";
-@use "sass:math";
+// @use "sass:map";
+// @use "sass:math";
 
-@mixin makeGrid($prefix) {
-  @media screen and (min-width: map.get($breakpoints-value, $prefix)) {
-    .container {
-      max-width: map.get($containers-value, $prefix);
-    }
+// @mixin makeGrid($prefix) {
+//   @media screen and (min-width: map.get($breakpoints-value, $prefix)) {
+//     .container {
+//       max-width: map.get($containers-value, $prefix);
+//     }
 
-    @for $i from 1 through 12 {
-      $percent: math.percentage(math.div($i,12));
-      .col-#{$prefix}-#{$i} {
-          flex: 0 0 $percent;
-          max-width: $percent;
-          width: 100%;
-          padding-left: 15px;
-          padding-right: 15px;
-      }
-    }
-  }
-}
+//     @for $i from 1 through 12 {
+//       $percent: math.percentage(math.div($i,12));
+//       .col-#{$prefix}-#{$i} {
+//           flex: 0 0 $percent;
+//           max-width: $percent;
+//           width: 100%;
+//           padding-left: 15px;
+//           padding-right: 15px;
+//       }
+//     }
+//   }
+// }
 
 %imgBackground {
   position: absolute;
